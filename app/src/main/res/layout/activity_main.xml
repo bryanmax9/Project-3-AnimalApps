@@ -57,4 +57,165 @@
         app:srcCompat="@drawable/result"
         tools:layout_editor_absoluteX="104dp" />
 
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="130dp"
+        android:gravity="center_horizontal">
+
+        <!-- Button 1 -->
+        <FrameLayout
+            android:id="@+id/CardView1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginTop="468dp"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/iconView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/splashplay" />
+            <TextView
+                android:id="@+id/iconTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Splash and Play (Get Fit-👟)"
+                android:gravity="center_horizontal|bottom"
+                android:layout_marginTop="100dp"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                />
+        </FrameLayout>
+
+        <!-- Button 2 -->
+        <FrameLayout
+            android:id="@+id/CardView1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginTop="468dp"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/iconView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/feastfind" />
+            <TextView
+                android:id="@+id/iconTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feast and Find (Get Strong-💪)"
+                android:gravity="center_horizontal|bottom"
+                android:layout_marginTop="100dp"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                />
+        </FrameLayout>
+
+        <!-- Button 3 -->
+        <FrameLayout
+            android:id="@+id/CardView1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginTop="468dp"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/iconView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ridewaves" />
+            <TextView
+                android:id="@+id/iconTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ride the Waves (Lose Weight-🏋️‍♂️)"
+                android:gravity="center_horizontal|bottom"
+                android:layout_marginTop="100dp"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/accountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="124dp"
+        android:text="Have an account?"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonContainer"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContainer" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="52dp"
+        android:text="Log in"
+        android:textColor="#ADD8E6"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonContainer"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContainer" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Continue"
+        app:layout_constraintEnd_toEndOf="@+id/loginText"
+        app:layout_constraintTop_toBottomOf="@+id/loginText" />
+
+    <TextView
+        android:id="@+id/termsText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="By continuing you accept our Terms of Use and Privacy Policy."
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/continueButton"
+        app:layout_constraintTop_toBottomOf="@+id/continueButton" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
